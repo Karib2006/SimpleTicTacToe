@@ -6,6 +6,8 @@ body{
 #playboard{
     display: flex;
     border: rgb(241, 173, 45) 10px;
+    align-items: center;
+    justify-content: center;
     border-style: groove;
     width: 25vw;
     margin: 0%;
@@ -112,7 +114,21 @@ body{
     text-decoration: underline;
     font-size: 2rem;
 }
+#replay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reset_btn{
+    text-decoration: none;
+    color: black;
+    background-color: chartreuse;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 0.2rem;
+    border: solid black 2px
 
+}
 
 
 

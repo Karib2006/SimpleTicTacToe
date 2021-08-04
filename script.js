@@ -199,6 +199,7 @@ function blue_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-blue').appendChild(celeb)
         document.getElementById('tag-2').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((three.innerHTML == 'O') && (five.innerHTML == 'O') && (seven.innerHTML == "O")){
@@ -206,6 +207,7 @@ function blue_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-blue').appendChild(celeb)
         document.getElementById('tag-2').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((one.innerHTML == 'O') && (two.innerHTML == 'O') && (three.innerHTML == "O")){
@@ -213,6 +215,7 @@ function blue_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-blue').appendChild(celeb)
         document.getElementById('tag-2').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((four.innerHTML == 'O') && (five.innerHTML == 'O') && (six.innerHTML == "O")){
@@ -220,6 +223,7 @@ function blue_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-blue').appendChild(celeb)
         document.getElementById('tag-2').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((seven.innerHTML == 'O') && (eight.innerHTML == 'O') && (nine.innerHTML == "O")){
@@ -227,6 +231,7 @@ function blue_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-blue').appendChild(celeb)
         document.getElementById('tag-2').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((one.innerHTML == 'O') && (four.innerHTML == 'O') && (seven.innerHTML == "O")){
@@ -234,6 +239,7 @@ function blue_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-blue').appendChild(celeb)
         document.getElementById('tag-2').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((three.innerHTML == 'O') && (six.innerHTML == 'O') && (nine.innerHTML == "O")){
@@ -241,6 +247,7 @@ function blue_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-blue').appendChild(celeb)
         document.getElementById('tag-2').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((two.innerHTML == 'O') && (five.innerHTML == 'O') && (eight.innerHTML == "O")){
@@ -248,6 +255,7 @@ function blue_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-blue').appendChild(celeb)
         document.getElementById('tag-2').innerHTML = 'WINNER !!'
+        replay();
     }
 
 }
@@ -268,6 +276,7 @@ function red_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-red').appendChild(celeb)
         document.getElementById('tag-1').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((three.innerHTML == 'X') && (five.innerHTML == 'X') && (seven.innerHTML == "X")){
@@ -275,6 +284,7 @@ function red_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-red').appendChild(celeb)
         document.getElementById('tag-1').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((one.innerHTML == 'X') && (two.innerHTML == 'X') && (three.innerHTML == "X")){
@@ -282,6 +292,7 @@ function red_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-red').appendChild(celeb)
         document.getElementById('tag-1').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((four.innerHTML == 'X') && (five.innerHTML == 'X') && (six.innerHTML == "X")){
@@ -289,6 +300,7 @@ function red_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-red').appendChild(celeb)
         document.getElementById('tag-1').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((seven.innerHTML == 'X') && (eight.innerHTML == 'X') && (nine.innerHTML == "X")){
@@ -296,6 +308,7 @@ function red_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-red').appendChild(celeb)
         document.getElementById('tag-1').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((one.innerHTML == 'X') && (four.innerHTML == 'X') && (seven.innerHTML == "X")){
@@ -303,6 +316,7 @@ function red_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-red').appendChild(celeb)
         document.getElementById('tag-1').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((two.innerHTML == 'X') && (five.innerHTML == 'X') && (eight.innerHTML == "X")){
@@ -310,12 +324,29 @@ function red_win(){
         celeb.src = "images/rickroll.gif"
         document.getElementById('winner-red').appendChild(celeb)
         document.getElementById('tag-1').innerHTML = 'WINNER !!'
+        replay();
     }
 
     if((three.innerHTML == 'X') && (six.innerHTML == 'X') && (nine.innerHTML == "X")){
         var celeb = document.createElement('img');
-        celeb.src = "images/rickroll.gif"
-        document.getElementById('winner-red').appendChild(celeb)
-        document.getElementById('tag-1').innerHTML = 'WINNER !!'
+        celeb.src = "images/rickroll.gif";
+        document.getElementById('winner-red').appendChild(celeb);
+        document.getElementById('tag-1').innerHTML = 'WINNER !!';
+        replay();
     }
 }
+
+function replay(){
+    var r_btn = document.createElement('a');
+    r_btn.innerHTML = 'REPLAY';
+    r_btn.setAttribute('id', 'reset_btn')
+    r_btn.href = 'index.html'
+    document.getElementById('replay').appendChild(r_btn);
+}
+
+// function reset(){
+//     document.getElementById('row', 'div-1', 'div-2', 'div-3','div-4','div-5','div-6','div-7','div-8','div-9').remove;
+//     var rs_btn = createElement('btn');
+//     rs_btn.innerHTML = 'RESET';
+//     document.getElementById('playboard').appendChild(rs_btn);
+// }
