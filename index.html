@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>TIC TAC TOE</title>
+</head>
+<body>
+    <h1 align = center>THE TIC TAC TOE GAME</h1>
+
+    <div id="playboard">
+        <div class="rows">
+            <div id="div-1"><h2 align = center class="num" id="c1">1</h2></div>
+            <div id="div-2"><h2 align = center class="num" id="c2">2</h2></div>
+            <div id="div-3"><h2 align = center class="num" id="c3">3</h2></div>
+        </div>
+
+        <div class="rows">
+            <div id="div-4"><h2 align = center class="num" id="c4">4</h2></div>
+            <div id="div-5"><h2 align = center class="num" id="c5">5</h2></div>
+            <div id="div-6"><h2 align = center class="num" id="c6">6</h2></div>
+        </div>
+
+        <div class="rows">
+            <div id="div-7"><h2 align = center class="num" id="c7">7</h2></div>
+            <div id="div-8"><h2 align = center class="num" id="c8">8</h2></div>
+            <div id="div-9"><h2 align = center class="num" id="c9">9</h2></div>
+        </div>
+    </div>
+
+    <div id="players">
+        <div id="player-1">
+            <h2 id="tag-1">Player 1</h2>
+            <div id="winner-red"></div>
+            <div id="turn-1">
+                <button id="button-red-1" class="play-button" onclick="btn_1_r(blue_1, red_1)">1</button>
+                <button id="button-red-2" class="play-button" onclick="btn_2_r(blue_2, red_2)">2</button>
+                <button id="button-red-3" class="play-button" onclick="btn_3_r(blue_3, red_3)">3</button>
+                <button id="button-red-4" class="play-button" onclick="btn_4_r(blue_4, red_4)">4</button>
+                <button id="button-red-5" class="play-button" onclick="btn_5_r(blue_5, red_5)">5</button>
+                <button id="button-red-6" class="play-button" onclick="btn_6_r(blue_6, red_6)">6</button>
+                <button id="button-red-7" class="play-button" onclick="btn_7_r(blue_7, red_7)">7</button>
+                <button id="button-red-8" class="play-button" onclick="btn_8_r(blue_8, red_8)">8</button>
+                <button id="button-red-9" class="play-button" onclick="btn_9_r(blue_9, red_9)">9</button>
+            </div>
+        </div>
+        <div id="player-2">
+            <h2 id="tag-2">Player 2</h2>
+            <div id="winner-blue"></div>
+            <div id="turn-2">
+                <button class="play-button-2" id="button-blue-1" onclick="btn_1_b(blue_1, red_1)">1</button>
+                <button class="play-button-2" id="button-blue-2" onclick="btn_2_b(blue_2, red_2)">2</button>
+                <button class="play-button-2" id="button-blue-3" onclick="btn_3_b(blue_3, red_3)">3</button>
+                <button class="play-button-2" id="button-blue-4" onclick="btn_4_b(blue_4, red_4)">4</button>
+                <button class="play-button-2" id="button-blue-5" onclick="btn_5_b(blue_5, red_5)">5</button>
+                <button class="play-button-2" id="button-blue-6" onclick="btn_6_b(blue_6, red_6)">6</button>
+                <button class="play-button-2" id="button-blue-7" onclick="btn_7_b(blue_7, red_7)">7</button>
+                <button class="play-button-2" id="button-blue-8" onclick="btn_8_b(blue_8, red_8)">8</button>
+                <button class="play-button-2" id="button-blue-9" onclick="btn_9_b(blue_9, red_9)">9</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- whole application is 503 lines of code -->
